@@ -1,100 +1,39 @@
-# 🚗 Vehicle Booking System (NT Internship Project)
-A web-based Vehicle Booking System developed during my internship at National Telecom Public Company Limited (NT).
-This system replaces traditional paper-based booking forms with a digital solution to reduce paper usage, printing costs, and manual processes.
-## 📌 Overview
+# ระบบจองยานพาหนะออนไลน์ Car Reservation Service (CRS)
 
-Previously, vehicle reservations were handled using paper forms that required printing and physical signatures. This project was created to modernize the workflow by providing a fully digital booking and approval system.
+ระบบจองยานพาหนะออนไลน์ ออกแบบโดยใช้ คชสาร เฟรมเวอร์ค (PHP) รองรับ 3 ภาษา ไทย อังกฤษ และ ลาว สามารถตรวจสอบการจองซ้ำได้ แสดงผลการจองรูปแบบปฏิทิน
 
-The system is currently in real-world use within the organization.
+รายละเอียดเพิ่มเติม https://www.kotchasan.com/index.php?module=knowledge&id=104
 
----
+## ความต้องการของระบบ
 
-## ✨ Features
-📝 Online Vehicle Booking Form
+- PHP 5.6 ขึ้นไป
+- ext-mbstring
+- PDO Mysql
 
-* Users can submit booking requests via web interface
-* Automatically stores data in MySQL database
+## การติดตั้งและการอัปเกรด
 
-✍️ Digital Signature System
+1.  ให้อัปโหลดโค้ดทั้งหมดจากที่ดาวน์โหลด ขึ้นไปบน Server
+2.  เรียกตัวติดตั้ง http://domain.tld/install/ (เปลี่ยน domain.tld เป็นโดเมนรวมพาธที่ทำการติดตั้งไว้) และดำเนินการตามขั้นตอนการติดตั้งหรืออัปเกรดจนกว่าจะเสร็จสิ้น
+3.  ลบไดเร็คทอรี่ install/ ออก
 
-* Supports 8 operational positions (auto display signatures)
-* Includes 3 admin approvers for vehicle approval
-* Displays signatures dynamically based on user roles
+## การใช้งาน
 
-👤 Driver employee code
+- เข้าระบบเป็นผู้ดูแลระบบ : `admin@localhost` และ Password : `admin`
+- เข้าระบบเป็นสมาชิก : `demo@localhost` และ Password : `demo`
 
-* Search/filter driver by employee ID
-* Automatically display driver name
-  
-📄 PDF Export
+## ข้อตกลงการนำไปใช้งาน
 
-* Generate official booking documents in PDF format
-* Compatible with existing NT form structure
-  
-🔍 Data Management
+- สามารถนำไปใช้งานส่วนตัวได้
+- สามารถพัฒนาต่อยอดได้
+- มีข้อสงสัยสามารถสอบถามได้ที่บอร์ดของคชสาร https://www.kotchasan.com
+- ต้องการให้ผู้เขียนพัฒนาเพิ่มเติม ติดต่อผู้เขียนได้โดยตรง (อาจมีค่าใช้จ่าย)
+- ผู้เขียนไม่รับผิดชอบข้อผิดพลาดใดๆในการใช้งาน
+- ห้ามขาย ถ้าต้องการนำไปพัฒนาต่อเพื่อขายให้ติดต่อผู้เขียนก่อน (เพื่อบริจาค)
 
-* View, edit, and export booking records
-* Mileage tracking support
-  
-🌐 Multi-language Support (basic structure included)
+## หากต้องการสนับสนุนผู้เขียน สามารถบริจาคช่วยเหลือค่า Server ได้ที่
 
----
-## 🛠️ Tech Stack
-
-* Backend: PHP
-* Database: MySQL
-* Database Tool: phpMyAdmin
-* Frontend: HTML, CSS, JavaScript
-* PDF Generator: TCPDF
-* Server: Apache (XAMPP / LAMP)
----
-
-## 📁 Project Structure
-```text
-├── datas/              # Database-related files
-├── js/                 # JavaScript files
-├── language/           # Language support
-├── modules/            # Core modules
-├── pdf-lib/            # TCPDF library
-├── signaturePic/       # Signature images
-├── settings/           # System configuration
-├── index.php           # Main entry point
-├── generate_pdf.php    # PDF generation
-├── api.php             # API handling
-└── README.md
- ``` 
----
-## 🔐 User Roles
-
-User
-* Create booking requests
-* View booking status
-
-🚗 Driver
-* Record mileage and trip details
-
-🛠️ Admin
-* Approve or reject booking requests
----
-## 🖊️ Signature System
-
-The system supports:
-* 8 operational roles → auto display signatures
-* 3 admin approvers → approval signatures
-
-Signatures are stored as images in:
-```text
-/signaturePic/
- ```
-
-Automatically rendered in generated PDF
-
----
-
-
-## 👨‍💻 Developer
-
-* Siwat Kamkong (Computer Engineering)
-* Intern at National Telecom Public Company Limited (NT)
-
-
+```
+ธนาคาร กสิกรไทย สาขากาญจนบุรี
+เลขที่บัญชี 221-2-78341-5
+ชื่อบัญชี กรกฎ วิริยะ
+```
